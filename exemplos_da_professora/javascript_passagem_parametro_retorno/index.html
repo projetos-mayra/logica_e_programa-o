@@ -1,0 +1,36 @@
+<html>
+<header>
+	<title> Aula3 JavaScritp </title>
+	<script src="calculo.js"></script>
+</header>
+<body>
+<p> Resultado Cálculo:
+	
+	<script>
+
+	a = parseInt (prompt ("Dígite o primeiro valor para somar:"));
+	b = parseInt (prompt ("Dígite o segundo valor para somar:"));
+	resp = parseInt (prompt ("Digite 1 para somar \n2 para Subtrair \n3 para Multiplicar \n4 para Dividir:"));
+
+	if (resp == 1){
+	resultado = soma(a, b);
+ 	document.write("<P>A soma de é = " + resultado);
+	}
+	if (resp == 2){
+	resultado = subtrair(a, b);
+ 	document.write("<P>A Subtração é = " + resultado);
+	}
+	if (resp == 3){
+	resultado = mult(a, b);
+ 	document.write("<P>A Multiplicação é = " + resultado);
+	}
+	if (resp == 4){
+	resultado = div(a, b);
+ 	document.write("<P>A Divisão é = " + resultado);
+	}
+	
+	
+ 	</script>
+
+</body>
+</html>
